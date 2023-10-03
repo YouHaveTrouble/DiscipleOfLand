@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #eaeaea;
+}
+
+body {
+  background-color: #2a2a2a;
+  margin: 0;
+  padding: 0;
+}
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  font-weight: normal;
+}

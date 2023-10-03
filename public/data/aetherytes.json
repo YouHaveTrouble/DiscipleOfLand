@@ -1,0 +1,63 @@
+[
+  {
+    "position": {
+      "zone": "labyrinthos",
+      "x": 30.3,
+      "y": 11.9
+    },
+    "name": {
+      "en": "The Archeion"
+    }
+  },
+  {
+    "position": {
+      "zone": "labyrinthos",
+      "x": 21.6,
+      "y": 20.4
+    },
+    "name": {
+      "en": "Sharlayan Hamlet"
+    }
+  },
+  {
+    "position": {
+      "zone": "labyrinthos",
+      "x": 6.8,
+      "y": 27.5
+    },
+    "name": {
+      "en": "Aporia"
+    }
+  },
+  {
+    "position": {
+      "zone": "thavnair",
+      "x": 29.5,
+      "y": 16.5
+    },
+    "name": {
+      "en": "Palaka's Stand"
+    }
+  },
+  {
+    "position": {
+      "zone": "thavnair",
+      "x": 10.9,
+      "y": 22.2
+    },
+    "name": {
+      "en": "The Great Work"
+    }
+  },
+  {
+    "position": {
+      "zone": "thavnair",
+      "x": 25.3,
+      "y": 34.0
+    },
+    "name": {
+      "en": "Yedlihmad"
+    }
+  }
+]
+

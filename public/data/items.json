@@ -1,0 +1,22 @@
+{
+  "rarefied-iceberg-lettuce": {
+    "name": "Rarefied Iceberg Lettuce",
+    "scrip-color": "purple",
+    "level": 90
+  },
+  "rarefied-dark-rye": {
+    "name": "Rarefied Dark Rye",
+    "scrip-color": "white",
+    "level": 89
+  },
+  "rarefied-palm-log": {
+    "name": "Rarefied Palm Log",
+    "scrip-color": "white",
+    "level": 81
+  },
+  "rarefied-coconut": {
+    "name": "Rarefied Coconut",
+    "scrip-color": "white",
+    "level": 85
+  }
+}
