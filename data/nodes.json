@@ -1,0 +1,37 @@
+[
+  {
+    "job": "botanist",
+    "type": "unspoiled",
+    "position": {
+      "zone": "labyrinthos",
+      "x": 9.7,
+      "y": 22.2
+    },
+    "times": [
+      "06:00-08:00",
+      "18:00-20:00"
+    ],
+    "items": [
+      "rarefied-dark-rye",
+      "rarefied-iceberg-lettuce"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "unspoiled",
+    "position": {
+      "zone": "thavnair",
+      "x": 14.3,
+      "y": 14.5
+    },
+    "times": [
+      "02:00-04:00",
+      "14:00-16:00"
+    ],
+    "items": [
+      "rarefied-palm-log",
+      "rarefied-coconut"
+    ]
+  }
+]
+
