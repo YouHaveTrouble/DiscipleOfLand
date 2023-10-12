@@ -30,6 +30,7 @@
     "extends": [
       "plugin:vue/strongly-recommended",
       "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
       "@vue/typescript/recommended"
     ],
     "plugins": ["@typescript-eslint"],

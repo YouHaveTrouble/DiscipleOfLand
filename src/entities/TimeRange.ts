@@ -29,6 +29,4 @@ export default class TimeRange {
     return targetDate.getTime();
   }
 
-
-
 }
