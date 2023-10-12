@@ -6,10 +6,10 @@ export default class Aetheryte {
   }
 
   constructor(
-    data: any,
+    data: {position: {x: number, y: number, zone: string}, name: {en: string}}
   ) {
     this.position = data.position;
-    this.name = data.name.en;
+    this.name = data.name;
   }
 
 

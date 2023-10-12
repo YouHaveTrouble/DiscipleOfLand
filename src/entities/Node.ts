@@ -1,5 +1,5 @@
-import {Job} from "../enums/Job";
-import {NodeType} from "../enums/NodeType";
+import {Job} from "@/enums/Job";
+import {NodeType} from "@/enums/NodeType";
 import Item from "./Item";
 import Aetheryte from "./Aetheryte";
 import TimeRange from "./TimeRange";

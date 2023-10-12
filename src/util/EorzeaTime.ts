@@ -11,7 +11,7 @@ export default class EorzeaTime {
    */
   readonly eorzeaDate: Date;
 
-  private constructor(realDate: Date = new Date()) {
+  public constructor(realDate: Date = new Date()) {
     this.realDate = realDate;
     this.eorzeaDate = new Date(realDate.getTime() * (3600 / 175));
   }

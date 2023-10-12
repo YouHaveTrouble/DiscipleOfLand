@@ -2,18 +2,43 @@
   "name": "discipleofland",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build && cp -r CNAME dist/CNAME",
     "preview": "vite preview"
   },
   "dependencies": {
-    "sass": "^1.67.0",
-    "typescript": "^5.2.2",
     "vue": "^3.3.4"
   },
   "devDependencies": {
+    "sass": "^1.67.0",
+    "typescript": "^5.2.2",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
     "@vitejs/plugin-vue": "^4.2.3",
-    "vite": "^4.3.9"
+    "@vue/eslint-config-typescript": "^12.0.0",
+    "eslint": "^8.51.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "vite": "^4.3.9",
+    "vue-eslint-parser": "^9.3.2",
+    "vite-plugin-eslint": "^1.8.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "parser": "vue-eslint-parser",
+    "extends": [
+      "plugin:vue/strongly-recommended",
+      "eslint:recommended",
+      "@vue/typescript/recommended"
+    ],
+    "plugins": ["@typescript-eslint"],
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 2020
+    },
+    "ignorePatterns": [
+      "dist/"
+    ]
   }
 }

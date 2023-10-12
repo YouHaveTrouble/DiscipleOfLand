@@ -4,8 +4,10 @@ export default class Zone {
     en: string,
   }
 
-  constructor(data: any) {
-    this.name = data.name;
+  constructor(data: {name: {en: string}}) {
+    this.name = {
+      en: data.name.en
+    };
   }
 
 }

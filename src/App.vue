@@ -1,17 +1,18 @@
 <template>
-  <nav>
-    <div class="current-eorzea-time">
-      {{ eorzeaTime.getPrettyTime() }}
-    </div>
-  </nav>
-  <main>
-    <SortedNodeList
-        :nodes="nodes"
+  <div>
+    <nav>
+      <div class="current-eorzea-time">
+        {{ eorzeaTime.getPrettyTime() }}
+      </div>
+    </nav>
+    <main>
+      <SortedNodeList
+        :nodes="nodes as Node[]"
         :zones="zones"
-        :eorzeaTime="eorzeaTime"
-    />
-  </main>
-
+        :eorzea-time="eorzeaTime"
+      />
+    </main>
+  </div>
 </template>
 
 <script lang="ts">
@@ -59,10 +60,10 @@ export default defineComponent({
       this.eorzeaTime = new EorzeaTime();
     }, 500);
 
-    const aetheryteData = await fetch("/data/aetherytes.json")
-        .catch(() => {
-          return null;
-        });
+    const aetheryteData: Response | null = await fetch("/data/aetherytes.json")
+      .catch((): null => {
+        return null;
+      });
     if (aetheryteData === null) {
       console.error("Failed to fetch aetheryte data!")
       return;
@@ -73,10 +74,10 @@ export default defineComponent({
       this.aetherytes.push(new Aetheryte(aetheryteData));
     }
 
-    const itemData = await fetch("/data/items.json")
-        .catch(() => {
-          return null;
-        });
+    const itemData: Response | null = await fetch("/data/items.json")
+      .catch((): null => {
+        return null;
+      });
     if (itemData === null) {
       console.error("Failed to fetch item data!")
       return;
@@ -88,10 +89,10 @@ export default defineComponent({
       this.items[itemId] = new Item(itemId, itemData);
     }
 
-    const zoneData = await fetch("/data/zones.json")
-        .catch(() => {
-          return null;
-        });
+    const zoneData: Response | null = await fetch("/data/zones.json")
+      .catch((): null => {
+        return null;
+      });
     if (zoneData === null) {
       console.error("Failed to fetch zone data!")
       return;
@@ -102,9 +103,9 @@ export default defineComponent({
     }
 
     const nodeData = await fetch("/data/nodes.json")
-        .catch(() => {
-          return null;
-        });
+      .catch(() => {
+        return null;
+      });
     if (nodeData === null) {
       console.error("Failed to fetch node data!")
       return;
@@ -133,10 +134,10 @@ export default defineComponent({
         const startTime = timeSplit[0].split(":");
         const endTime = timeSplit[1].split(":");
         times.push(new TimeRange(
-            parseInt(startTime[0]),
-            parseInt(startTime[1]),
-            parseInt(endTime[0]),
-            parseInt(endTime[1])
+          parseInt(startTime[0]),
+          parseInt(startTime[1]),
+          parseInt(endTime[0]),
+          parseInt(endTime[1])
         ));
       }
 
@@ -144,13 +145,13 @@ export default defineComponent({
       if (nearestAetheryte === null) continue;
 
       this.nodes.push(new Node(
-              job,
-              nodeType,
-              nodeData.position,
-              times,
-              items,
-              nearestAetheryte
-          )
+          job,
+          nodeType,
+          nodeData.position,
+          times,
+          items,
+          nearestAetheryte
+        )
       )
     }
 
