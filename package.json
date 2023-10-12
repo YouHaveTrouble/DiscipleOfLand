@@ -38,7 +38,9 @@
       "ecmaVersion": 2020
     },
     "ignorePatterns": [
-      "dist/"
+      "dist/",
+      "node_modules/",
+      ".github/"
     ]
   }
 }
