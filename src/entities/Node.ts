@@ -28,6 +28,7 @@ export default class Node {
     this.times = times;
     this.items = items;
     this.nearestAetheryte = nearestAetheryte;
+    items.sort((a, b) => b.level - a.level);
   }
 
   isActive(eorzeaTime: EorzeaTime): boolean {

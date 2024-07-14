@@ -42,6 +42,11 @@ export default defineComponent(
           this.displayNodes = this.nodes;
         }
       },
+      displayNodes: {
+        handler() {
+          this.sortListByTime();
+        }
+      },
       eorzeaTime: {
         immediate: true,
         handler(newValue, oldValue) {
@@ -64,8 +69,9 @@ export default defineComponent(
         });
       },
     },
-    mounted() {
+    async mounted() {
       this.displayNodes = this.nodes;
+      this.sortListByTime();
     },
   }
 );

@@ -1,5 +1,5 @@
 <template>
-  <article class="node">
+  <article class="node" :class="{active: gatheringNode.isActive(eorzeaTime)}">
     <div class="timer">
       {{
         gatheringNode.isActive(eorzeaTime) ? 'Active' : prettyTimer(gatheringNode.getSecondsToNextActiveTime(eorzeaTime))
@@ -73,6 +73,13 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
+
+@keyframes pulsing {
+  0% {background-color: rgba(255,255,255, 0.05);}
+  50% {background-color: rgba(255,255,255, 0.075);}
+  100% {background-color: rgba(255,255,255, 0.05);}
+}
+
 .node {
   display: flex;
   flex-direction: row;
@@ -83,6 +90,10 @@ export default defineComponent({
   border: 1px solid #fff;
   padding: 0.5rem;
   border-radius: 0.25rem;
+
+  &.active {
+    animation: infinite pulsing 6s;
+  }
 
   .timer {
     min-width: 7rem;

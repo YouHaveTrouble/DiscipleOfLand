@@ -56,6 +56,7 @@ export default defineComponent({
     }
   },
   async mounted() {
+    this.eorzeaTime = new EorzeaTime();
     setInterval(() => {
       this.eorzeaTime = new EorzeaTime();
     }, 500);
