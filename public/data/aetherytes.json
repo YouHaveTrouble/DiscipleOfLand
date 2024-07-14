@@ -58,6 +58,116 @@
     "name": {
       "en": "Yedlihmad"
     }
+  },
+  {
+    "position": {
+      "zone": "shaaloani",
+      "x": 15.6,
+      "y": 19.2
+    },
+    "name": {
+      "en": "Sheshenewezi Springs"
+    }
+  },
+  {
+    "position": {
+      "zone": "shaaloani",
+      "x": 29.0,
+      "y": 30.8
+    },
+    "name": {
+      "en": "Hhusatahwi"
+    }
+  },
+  {
+    "position": {
+      "zone": "shaaloani",
+      "x": 27.1,
+      "y": 10.1
+    },
+    "name": {
+      "en": "Mehwahhetsoan"
+    }
+  },
+  {
+    "position": {
+      "zone": "heritage-found",
+      "x": 17.0,
+      "y": 9.8
+    },
+    "name": {
+      "en": "The Outskirts"
+    }
+  },
+  {
+    "position": {
+      "zone": "heritage-found",
+      "x": 31.7,
+      "y": 25.7
+    },
+    "name": {
+      "en": "Yyasulani Station"
+    }
+  },
+  {
+    "position": {
+      "zone": "heritage-found",
+      "x": 17.0,
+      "y": 23.9
+    },
+    "name": {
+      "en": "Electrope Strike"
+    }
+  },
+  {
+    "position": {
+      "zone": "living-memory",
+      "x": 21.5,
+      "y": 37.3
+    },
+    "name": {
+      "en": "Leynode Mnemo"
+    }
+  },
+  {
+    "position": {
+      "zone": "living-memory",
+      "x": 34.7,
+      "y": 15.7
+    },
+    "name": {
+      "en": "Leynode Pyro"
+    }
+  },
+  {
+    "position": {
+      "zone": "living-memory",
+      "x": 16.4,
+      "y": 13.5
+    },
+    "name": {
+      "en": "Leynode Aero"
+    }
+  },
+  {
+    "position": {
+      "zone": "urquopacha",
+      "x": 30.5,
+      "y": 34.2
+    },
+    "name": {
+      "en": "Worlar's Echo"
+    }
+  },
+  {
+    "position": {
+      "zone": "urquopacha",
+      "x": 28.1,
+      "y": 13.1
+    },
+    "name": {
+      "en": "Wachunpelo"
+    }
   }
 ]
 

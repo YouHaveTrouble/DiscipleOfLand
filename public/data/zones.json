@@ -8,5 +8,30 @@
     "name": {
       "en": "Thavnair"
     }
+  },
+  "yak-tel": {
+    "name": {
+      "en": "Yak T'el"
+    }
+  },
+  "shaaloani": {
+    "name": {
+      "en": "Shaaloani"
+    }
+  },
+  "heritage-found": {
+    "name": {
+      "en": "Heritage Found"
+    }
+  },
+  "living-memory": {
+    "name": {
+      "en": "Living Memory"
+    }
+  },
+  "urquopacha": {
+    "name": {
+      "en": "Urquopacha"
+    }
   }
 }

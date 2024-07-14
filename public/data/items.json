@@ -1,22 +1,62 @@
 {
   "rarefied-iceberg-lettuce": {
     "name": "Rarefied Iceberg Lettuce",
-    "scrip-color": "purple",
     "level": 90
   },
   "rarefied-dark-rye": {
     "name": "Rarefied Dark Rye",
-    "scrip-color": "white",
     "level": 89
   },
   "rarefied-palm-log": {
     "name": "Rarefied Palm Log",
-    "scrip-color": "white",
     "level": 81
   },
   "rarefied-coconut": {
     "name": "Rarefied Coconut",
-    "scrip-color": "white",
     "level": 85
+  },
+  "rarefied-titanium-gold-ore": {
+    "name": "Rarefied Titanium Gold Ore",
+    "level": 96
+  },
+  "rarefied-magnesite-ore": {
+    "name": "Rarefied Magnesite Ore",
+    "level": 100
+  },
+  "rarefied-rakaznar-ore": {
+    "name": "Rarefied Ra'Kaznar Ore",
+    "level": 100
+  },
+  "rarefied-white-gold-ore": {
+    "name": "Rarefied White Gold Ore",
+    "level": 98
+  },
+  "rarefied-ash-soil": {
+    "name": "Rarefied Ash Soil",
+    "level": 100
+  },
+  "rarefied-acacia-log": {
+    "name": "Rarefied Acacia Log",
+    "level": 100
+  },
+  "rarefied-acacia-bark": {
+    "name": "Rarefied Acacia Bark",
+    "level": 98
+  },
+  "rarefied-dark-mahogany-log": {
+    "name": "Rarefied Dark Mahogany Log",
+    "level": 100
+  },
+  "rarefied-sweet-kukuru-bean": {
+    "name": "Rarefied Sweet Kukuru Bean",
+    "level": 96
+  },
+  "rarefied-windsbalm-bay-leaf": {
+    "name": "Rarefied Windsbalm Bay Leaf",
+    "level": 100
+  },
+  "rarefied-mountain-flax": {
+    "name": "Rarefied Mountain Flax",
+    "level": 93
   }
 }

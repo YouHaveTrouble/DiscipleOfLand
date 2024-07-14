@@ -32,6 +32,122 @@
       "rarefied-palm-log",
       "rarefied-coconut"
     ]
+  },
+  {
+    "job": "miner",
+    "type": "unspoiled",
+    "position": {
+      "zone": "shaaloani",
+      "x": 9.2,
+      "y": 24.2
+    },
+    "times": [
+      "08:00-10:00",
+      "20:00-22:00"
+    ],
+    "items": [
+      "rarefied-magnesite-ore",
+      "rarefied-titanium-gold-ore"
+    ]
+  },
+  {
+    "job": "miner",
+    "type": "unspoiled",
+    "position": {
+      "zone": "heritage-found",
+      "x": 34.6,
+      "y": 8.2
+    },
+    "times": [
+      "04:00-06:00",
+      "16:00-18:00"
+    ],
+    "items": [
+      "rarefied-rakaznar-ore",
+      "rarefied-white-gold-ore"
+    ]
+  },
+  {
+    "job": "miner",
+    "type": "unspoiled",
+    "position": {
+      "zone": "living-memory",
+      "x": 24.9,
+      "y": 17.3
+    },
+    "times": [
+      "00:00-02:00",
+      "12:00-14:00"
+    ],
+    "items": [
+      "rarefied-ash-soil"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "unspoiled",
+    "position": {
+      "zone": "shaaloani",
+      "x": 31.6,
+      "y": 20.4
+    },
+    "times": [
+      "06:00-08:00",
+      "18:00-20:00"
+    ],
+    "items": [
+      "rarefied-acacia-log",
+      "rarefied-acacia-bark"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "unspoiled",
+    "position": {
+      "zone": "yar-tel",
+      "x": 36.9,
+      "y": 34.8
+    },
+    "times": [
+      "02:00-04:00",
+      "14:00-16:00"
+    ],
+    "items": [
+      "rarefied-acacia-log",
+      "rarefied-acacia-bark"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "unspoiled",
+    "position": {
+      "zone": "living-memory",
+      "x": 8.7,
+      "y": 7.6
+    },
+    "times": [
+      "10:00-12:00",
+      "22:00-00:00"
+    ],
+    "items": [
+      "rarefied-windsbalm-bay-leaf"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "unspoiled",
+    "position": {
+      "zone": "urquopacha",
+      "x": 5.9,
+      "y": 23.8
+    },
+    "times": [
+      "00:00-02:00",
+      "12:00-14:00"
+    ],
+    "items": [
+      "rarefied-mountain-flax"
+    ]
   }
 ]
 
