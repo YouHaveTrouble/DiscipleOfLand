@@ -11,13 +11,11 @@ This is currently still missing a lot of functionality and data.
 - [x] Displaying gathering node type
 - [x] Displaying node's items and their level
 - [x] Sorting based on time when node will be available
-- [ ] Filter and sorting section/popup
-- [ ] Filtering based on job
-- [ ] Filtering based on scrip type
-- [ ] Filtering based on items
-- [ ] Filtering based on level
+- [x] Filter and sorting section/popup
+- [x] Filtering based on job
+- [x] Filtering based on level
 - [ ] Filtering based on node type (legendary, ephemeral, etc.)
-- [ ] Fully input level 80-90 nodes data
+- [ ] Fully input level 80-100 nodes data
 
 ## Nice to have checklist
 - [ ] Fully input level 70-80 nodes data
