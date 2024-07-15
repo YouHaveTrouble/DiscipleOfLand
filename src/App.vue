@@ -67,16 +67,16 @@ export default defineComponent({
   methods: {
     findNearestAetheryte(zone: string, x: number, y: number): Aetheryte | null {
       let result = null;
+      let distance = Number.MAX_SAFE_INTEGER;
       for (const aetheryte of this.aetherytes) {
-        let distance = Number.MAX_VALUE;
-        if (aetheryte.position.zone === zone) {
-          const a = aetheryte.position.x - x;
-          const b = aetheryte.position.y - y;
-          const distanceToAetheryte = Math.sqrt((a * a) + (b * b));
-          if (distanceToAetheryte < distance) {
-            distance = distanceToAetheryte;
-            result = aetheryte;
-          }
+        if (aetheryte.position.zone !== zone) continue;
+        const a = aetheryte.position.x - x;
+        const b = aetheryte.position.y - y;
+        const distanceToAetheryte = Math.hypot(a, b);
+        if (distanceToAetheryte < distance) {
+          `Aetheryte ${aetheryte.name.en}  (${distance}) is new nearest aetheryte`;
+          distance = distanceToAetheryte;
+          result = aetheryte;
         }
       }
       return result;
