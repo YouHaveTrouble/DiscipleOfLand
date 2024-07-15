@@ -13,9 +13,9 @@ export default class Filters {
             jobs?: string[],
         },
     ) {
-        this.minLevel = data?.minLevel || 1;
+        this.minLevel = data?.minLevel || 91;
         this.maxLevel = data?.maxLevel || 100;
-        const jobData = data?.jobs || [];
+        const jobData = data?.jobs || [Job.BOTANIST, Job.MINER];
 
         for (const job of jobData) {
             const parsedJob = jobFromString(job);

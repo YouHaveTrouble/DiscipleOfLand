@@ -70,9 +70,13 @@ export default defineComponent(
       },
       filterNodes(nodes: Node[] = []) {
         let filters: Filters | null = null;
-        const filtersString = window.localStorage.getItem("filters");
+        let filtersString = window.localStorage.getItem("filters");
         if (filtersString === null) {
-          this.displayNodes = this.nodes;
+          window.localStorage.setItem("filters", JSON.stringify(new Filters()));
+          filtersString = window.localStorage.getItem("filters");
+        }
+        if (filtersString === null) {
+          console.error("Failed to get filters from local storage!");
           return;
         }
         const parsedFilters = JSON.parse(filtersString);
@@ -98,7 +102,6 @@ export default defineComponent(
     },
     mounted() {
       this.filterNodes(this.nodes);
-
     },
   }
 );
