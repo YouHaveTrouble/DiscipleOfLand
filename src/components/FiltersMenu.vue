@@ -129,14 +129,37 @@ section {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 1rem;
+  padding-block: 1rem;
 
   details {
     background-color: #1f1f1f;
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;
+    border-radius: 0.25rem;
+    padding: 1rem;
     gap: 0.5rem;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      content: "▶";
+      pointer-events: none;
+      rotate: 90deg;
+      transition: rotate 0.25s;
+    }
+
+    &[open] {
+      &:before {
+        rotate: 270deg;
+      }
+    }
 
     summary {
       cursor: pointer;
