@@ -4,12 +4,25 @@
       <div class="current-eorzea-time">
         {{ eorzeaTime.getPrettyTime() }}
       </div>
+      <div>
+        <button
+          class="filters-button"
+          :class="{ active: filtersActive}"
+          @click="filtersActive = !filtersActive"
+        >
+          {{ filtersActive ? ' Close filters' : 'Open filters' }}
+        </button>
+      </div>
     </nav>
     <main>
       <SortedNodeList
+        v-if="!filtersActive"
         :nodes="nodes as Node[]"
         :zones="zones"
         :eorzea-time="eorzeaTime"
+      />
+      <FiltersMenu
+        v-if="filtersActive"
       />
     </main>
   </div>
@@ -26,16 +39,20 @@ import {nodeTypeFromString} from "@/enums/NodeType";
 import SortedNodeList from "@/components/SortedNodeList.vue";
 import TimeRange from "@/entities/TimeRange";
 import Zone from "@/entities/Zone";
+import FiltersMenu from "@/components/FiltersMenu.vue";
+import Filters from "@/util/Filters";
 
 export default defineComponent({
   name: 'App',
-  components: {SortedNodeList},
+  components: {FiltersMenu, SortedNodeList},
   data: () => ({
     eorzeaTime: new EorzeaTime() as EorzeaTime,
     nodes: [] as Node[],
     aetherytes: [] as Aetheryte[],
     items: {} as { [key: string]: Item },
     zones: {} as { [key: string]: Zone },
+    filtersActive: false,
+    filters: new Filters(),
   }),
   methods: {
     findNearestAetheryte(zone: string, x: number, y: number): Aetheryte | null {
@@ -171,6 +188,17 @@ nav {
 
   .current-eorzea-time {
     font-size: 3rem;
+  }
+
+  .filters-button {
+    display: flex;
+    padding: 0.5rem;
+    border: 1px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+    &.active {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
   }
 }
 </style>

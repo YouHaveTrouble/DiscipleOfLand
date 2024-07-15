@@ -1,5 +1,8 @@
 <template>
-  <article class="node" :class="{active: gatheringNode.isActive(eorzeaTime)}">
+  <article
+    class="node"
+    :class="{active: gatheringNode.isActive(eorzeaTime)}"
+  >
     <div class="timer">
       {{
         gatheringNode.isActive(eorzeaTime) ? 'Active' : prettyTimer(gatheringNode.getSecondsToNextActiveTime(eorzeaTime))

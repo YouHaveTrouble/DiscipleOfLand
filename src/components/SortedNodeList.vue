@@ -16,6 +16,7 @@ import EorzeaTime from "../util/EorzeaTime";
 import Node from "@/entities/Node";
 import GatheringNode from "@/components/GatheringNode.vue";
 import Zone from "@/entities/Zone";
+import Filters from "@/util/Filters";
 
 export default defineComponent(
   {
@@ -37,10 +38,10 @@ export default defineComponent(
     },
     watch: {
       nodes: {
-        immediate: true,
-        handler() {
-          this.displayNodes = this.nodes;
-        }
+        handler(newNodes: Node[]) {
+          this.filterNodes(newNodes);
+        },
+        deep: true
       },
       displayNodes: {
         handler() {
@@ -48,7 +49,6 @@ export default defineComponent(
         }
       },
       eorzeaTime: {
-        immediate: true,
         handler(newValue, oldValue) {
           if (oldValue === undefined) return;
           if (newValue?.getMinutes() === oldValue?.getMinutes()) return;
@@ -68,10 +68,37 @@ export default defineComponent(
           return aSeconds - bSeconds;
         });
       },
+      filterNodes(nodes: Node[] = []) {
+        let filters: Filters | null = null;
+        const filtersString = window.localStorage.getItem("filters");
+        if (filtersString === null) {
+          this.displayNodes = this.nodes;
+          return;
+        }
+        const parsedFilters = JSON.parse(filtersString);
+        filters = new Filters(parsedFilters);
+
+        this.displayNodes = nodes.filter((node) => {
+          let shouldDisplay = false;
+
+          if (filters && !filters.jobs.includes(node.job)) {
+            return false;
+          }
+
+          for (const item of node.items) {
+            if (filters && item.level >= filters.minLevel && item.level <= filters.maxLevel) {
+              shouldDisplay = true;
+              break;
+            }
+          }
+
+          return shouldDisplay;
+        });
+      },
     },
-    async mounted() {
-      this.displayNodes = this.nodes;
-      this.sortListByTime();
+    mounted() {
+      this.filterNodes(this.nodes);
+
     },
   }
 );
