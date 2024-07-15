@@ -4,7 +4,16 @@
       <div class="current-eorzea-time">
         {{ eorzeaTime.getPrettyTime() }}
       </div>
-      <div>
+      <div class="top-bar-menu">
+        <a
+          href="https://github.com/YouHaveTrouble/DiscipleOfLand"
+          target="_blank"
+        >
+          <GithubLogo
+            color="#fff"
+            size="2rem"
+          />
+        </a>
         <button
           class="filters-button"
           :class="{ active: filtersActive}"
@@ -41,10 +50,11 @@ import TimeRange from "@/entities/TimeRange";
 import Zone from "@/entities/Zone";
 import FiltersMenu from "@/components/FiltersMenu.vue";
 import Filters from "@/util/Filters";
+import GithubLogo from "@/components/icons/GithubLogo.vue";
 
 export default defineComponent({
   name: 'App',
-  components: {FiltersMenu, SortedNodeList},
+  components: {GithubLogo, FiltersMenu, SortedNodeList},
   data: () => ({
     eorzeaTime: new EorzeaTime() as EorzeaTime,
     nodes: [] as Node[],
@@ -190,12 +200,21 @@ nav {
     font-size: 3rem;
   }
 
+  .top-bar-menu {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+  }
+
   .filters-button {
     display: flex;
     padding: 0.5rem;
     border: 1px solid #fff;
     background-color: transparent;
     cursor: pointer;
+    width: max-content;
+    white-space: nowrap;
+
     &.active {
       background-color: rgba(255, 255, 255, 0.1);
     }
