@@ -58,23 +58,22 @@ export default defineComponent({
   data: () => ({
     eorzeaTime: new EorzeaTime() as EorzeaTime,
     nodes: [] as Node[],
-    aetherytes: [] as Aetheryte[],
     items: {} as { [key: string]: Item },
     zones: {} as { [key: string]: Zone },
     filtersActive: false,
     filters: new Filters(),
   }),
   methods: {
-    findNearestAetheryte(zone: string, x: number, y: number): Aetheryte | null {
+    findNearestAetheryte(zoneName: string, x: number, y: number): Aetheryte | null {
       let result = null;
       let distance = Number.MAX_SAFE_INTEGER;
-      for (const aetheryte of this.aetherytes) {
-        if (aetheryte.position.zone !== zone) continue;
+      const zone = this.zones[zoneName]
+      if (!zone) return null;
+      for (const aetheryte of zone.aetherytes) {
         const a = aetheryte.position.x - x;
         const b = aetheryte.position.y - y;
         const distanceToAetheryte = Math.hypot(a, b);
         if (distanceToAetheryte < distance) {
-          `Aetheryte ${aetheryte.name.en}  (${distance}) is new nearest aetheryte`;
           distance = distanceToAetheryte;
           result = aetheryte;
         }
@@ -87,20 +86,6 @@ export default defineComponent({
     setInterval(() => {
       this.eorzeaTime = new EorzeaTime();
     }, 500);
-
-    const aetheryteData: Response | null = await fetch("/data/aetherytes.json")
-      .catch((): null => {
-        return null;
-      });
-    if (aetheryteData === null) {
-      console.error("Failed to fetch aetheryte data!")
-      return;
-    }
-
-    const aetherytes = await aetheryteData.json();
-    for (const aetheryteData of aetherytes) {
-      this.aetherytes.push(new Aetheryte(aetheryteData));
-    }
 
     const itemData: Response | null = await fetch("/data/items.json")
       .catch((): null => {
