@@ -34,6 +34,105 @@
     ]
   },
   {
+    "job": "botanist",
+    "type": "unspoiled",
+    "position": {
+      "zone": "ultima-thule",
+      "x": 14.0,
+      "y": 28.0
+    },
+    "times": [
+      "08:00-10:00",
+      "20:00-22:00"
+    ],
+    "items": [
+      "rarefied-ar-cean-cotton-boll"
+    ]
+  },
+  {
+    "job": "miner",
+    "type": "unspoiled",
+    "position": {
+      "zone": "labyrinthos",
+      "x": 32.5,
+      "y": 21.2
+    },
+    "times": [
+      "12:00-14:00",
+      "00:00-02:00"
+    ],
+    "items": [
+      "rarefied-sharlayan-rock-salt",
+      "rarefied-raw-ametrine"
+    ]
+  },
+  {
+    "job": "miner",
+    "type": "unspoiled",
+    "position": {
+      "zone": "garlemald",
+      "x": 12.9,
+      "y": 21.8
+    },
+    "times": [
+      "14:00-16:00",
+      "02:00-04:00"
+    ],
+    "items": [
+      "rarefied-eblan-alumen",
+      "rarefied-phrygian-gold-ore"
+    ]
+  },
+  {
+    "job": "miner",
+    "type": "unspoiled",
+    "position": {
+      "zone": "thavnair",
+      "x": 32.0,
+      "y": 25.0
+    },
+    "times": [
+      "04:00-06:00",
+      "16:00-18:00"
+    ],
+    "items": [
+      "rarefied-pewter-ore"
+    ]
+  },
+  {
+    "job": "miner",
+    "type": "unspoiled",
+    "position": {
+      "zone": "mare-lamentorum",
+      "x": 16.0,
+      "y": 32.0
+    },
+    "times": [
+      "06:00-08:00",
+      "18:00-20:00"
+    ],
+    "items": [
+      "rarefied-bismuth-ore"
+    ]
+  },
+  {
+    "job": "miner",
+    "type": "unspoiled",
+    "position": {
+      "zone": "elpis",
+      "x": 8.0,
+      "y": 36.0
+    },
+    "times": [
+      "10:00-12:00",
+      "22:00-00:00"
+    ],
+    "items": [
+      "rarefied-annite",
+        "rarefied-blue-zircon"
+    ]
+  },
+  {
     "job": "miner",
     "type": "unspoiled",
     "position": {

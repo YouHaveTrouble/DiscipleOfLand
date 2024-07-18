@@ -1,20 +1,75 @@
 {
-  "rarefied-iceberg-lettuce": {
-    "name": "Rarefied Iceberg Lettuce",
+
+  "rarefied-sykon": {
+    "name": "Rarefied Sykon",
+    "level": 87
+  },
+  "rarefied-elder-nutmeg": {
+    "name": "Rarefied Elder Nutmeg",
     "level": 90
-  },
-  "rarefied-dark-rye": {
-    "name": "Rarefied Dark Rye",
-    "level": 89
-  },
-  "rarefied-palm-log": {
-    "name": "Rarefied Palm Log",
-    "level": 81
   },
   "rarefied-coconut": {
     "name": "Rarefied Coconut",
     "level": 85
   },
+  "rarefied-palm-log": {
+    "name": "Rarefied Palm Log",
+    "level": 85
+  },
+  "rarefied-red-pine-log": {
+    "name": "Rarefied Red Pine Log",
+    "level": 83
+  },
+  "rarefied-dark-rye": {
+    "name": "Rarefied Dark Rye",
+    "level": 89
+  },
+  "rarefied-iceberg-lettuce": {
+    "name": "Rarefied Iceberg Lettuce",
+    "level": 90,
+    "stars": 1
+  },
+  "rarefied-ar-cean-cotton-boll": {
+    "name": "Rarefied AR-Cean Cotton Boll",
+    "level": 90,
+    "stars": 1
+  },
+
+  "rarefied-sharlayan-rock-salt": {
+    "name": "Rarefied Sharlayan Rock Salt",
+    "level": 85
+  },
+  "rarefied-raw-ametrine": {
+    "name": "Rarefied Raw Ametrine",
+    "level": 81
+  },
+  "rarefied-eblan-alumen": {
+    "name": "Rarefied Eblan Alumen",
+    "level": 90
+  },
+  "rarefied-phrygian-gold-ore": {
+    "name":"Rarefied Phrygian Gold Ore",
+    "level": 87
+  },
+  "rarefied-pewter-ore": {
+    "name": "Rarefied Pewter Ore",
+    "level": 90,
+    "stars": 1
+  },
+  "rarefied-bismuth-ore": {
+    "name": "Rarefied Bismuth Ore",
+    "level": 83
+  },
+  "rarefied-annite": {
+    "name": "Rarefied Annite",
+    "level": 90,
+    "stars": 1
+  },
+  "rarefied-blue-zircon": {
+    "name": "Rarefied Blue Zircon",
+    "level": 89
+  },
+
   "rarefied-titanium-gold-ore": {
     "name": "Rarefied Titanium Gold Ore",
     "level": 96

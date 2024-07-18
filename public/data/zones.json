@@ -67,6 +67,88 @@
       }
     ]
   },
+  "mare-lamentorum": {
+    "name": {
+        "en": "Mare Lamentorum"
+    },
+    "aetherytes": [
+      {
+        "position": {
+          "x": 10.6,
+          "y": 34.3
+        },
+        "name": {
+          "en": "Sinus Lacrimarum"
+        }
+      },
+      {
+        "position": {
+          "x": 21.7,
+          "y": 11.1
+        },
+        "name": {
+          "en": "Bestways Burrow"
+        }
+      }
+    ]
+  },
+  "ultima-thule": {
+    "name": {
+      "en": "Ultima Thule"
+    },
+    "aetherytes": [
+      {
+        "position": {
+          "x": 22.7,
+          "y": 8.3
+        },
+        "name": {
+          "en": "Reah Tahra"
+        }
+      },
+      {
+        "position": {
+        },
+        "name": {
+          "en": "Abode of the Ea"
+        }
+      },
+      {
+        "position": {
+          "x": 31.3,
+          "y": 28.0
+        },
+        "name": {
+          "en": "Base Omnicron"
+        }
+      }
+    ]
+  },
+  "garlemald": {
+    "name": {
+        "en": "Garlemald"
+    },
+    "aetherytes": [
+      {
+        "position": {
+          "x": 13.3,
+          "y": 31.1
+        },
+        "name": {
+          "en": "Camp Broken Glass"
+        }
+      },
+      {
+        "position": {
+          "x": 31.7,
+          "y": 18.0
+        },
+        "name": {
+          "en": "Tertium"
+        }
+      }
+    ]
+  },
   "yak-tel": {
     "name": {
       "en": "Yak T'el"
