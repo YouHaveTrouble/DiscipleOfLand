@@ -29,7 +29,7 @@
       <div class="info">
         <span>{{ zones[gatheringNode.nearestAetheryte.position.zone]?.name?.en }}</span>
         <span>{{ gatheringNode.nearestAetheryte.name.en }}</span>
-        <span>{{ gatheringNode.nearestAetheryte.position.x }}, {{ gatheringNode.nearestAetheryte.position.y }}</span>
+        <span>{{ gatheringNode.nearestAetheryte.position.x.toFixed(1) }}, {{ gatheringNode.nearestAetheryte.position.y.toFixed(1) }}</span>
       </div>
     </div>
     <div class="items">
