@@ -34,6 +34,9 @@
         v-if="filtersActive"
       />
     </main>
+    <footer>
+      <p>v{{ version }}</p>
+    </footer>
   </div>
 </template>
 
@@ -51,11 +54,13 @@ import Zone from "@/entities/Zone";
 import FiltersMenu from "@/components/FiltersMenu.vue";
 import Filters from "@/util/Filters";
 import GithubLogo from "@/components/icons/GithubLogo.vue";
+import {version} from "../package.json";
 
 export default defineComponent({
   name: 'App',
   components: {GithubLogo, FiltersMenu, SortedNodeList},
   data: () => ({
+    version: version,
     eorzeaTime: new EorzeaTime() as EorzeaTime,
     nodes: [] as Node[],
     items: {} as { [key: string]: Item },
@@ -219,5 +224,10 @@ nav {
       background-color: rgba(255, 255, 255, 0.1);
     }
   }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
