@@ -14,7 +14,7 @@ This is currently still missing a lot of functionality and data.
 - [x] Filter and sorting section/popup
 - [x] Filtering based on job
 - [x] Filtering based on level
-- [ ] Filtering based on node type (legendary, ephemeral, etc.)
+- [x] Filtering based on node type (legendary, ephemeral, etc.)
 - [ ] Fully input level 80-100 nodes data
 
 ## Nice to have checklist
