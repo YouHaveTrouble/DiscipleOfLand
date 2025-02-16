@@ -69,7 +69,6 @@
     "name": "Rarefied Blue Zircon",
     "level": 89
   },
-
   "rarefied-titanium-gold-ore": {
     "name": "Rarefied Titanium Gold Ore",
     "level": 96
@@ -112,6 +111,10 @@
   },
   "rarefied-mountain-flax": {
     "name": "Rarefied Mountain Flax",
+    "level": 93
+  },
+  "rarefied-raw-dark-amber": {
+    "name": "Rarefied Raw Dark Amber",
     "level": 93
   }
 }

@@ -300,5 +300,48 @@
         }
       }
     ]
+  },
+  "kozamauka": {
+    "name": {
+      "en": "Kozama'uka"
+    },
+    "aetherytes": [
+      {
+        "position": {
+          "x": 37.1,
+          "y": 16.9
+        },
+        "name": {
+          "en": "Dock Poga"
+        }
+      },
+      {
+        "position": {
+          "x": 18.0,
+          "y": 12.0
+        },
+        "name": {
+          "en": "Ok'hanu"
+        }
+      },
+      {
+        "position": {
+          "x": 11.8,
+          "y": 27.8
+        },
+        "name": {
+          "en": "Earthenshire"
+        }
+      },
+      {
+        "position": {
+          "x": 32.2,
+          "y": 25.9
+        },
+        "name": {
+          "en": "Many Fires"
+        }
+      }
+    ]
   }
 }
