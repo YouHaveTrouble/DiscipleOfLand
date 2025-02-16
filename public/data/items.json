@@ -116,5 +116,23 @@
   "rarefied-raw-dark-amber": {
     "name": "Rarefied Raw Dark Amber",
     "level": 93
+  },
+  "raw-spodumene": {
+    "name": "Raw Spodumene",
+    "level": 90,
+    "stars": 3,
+    "perception": 3850
+  },
+  "mempisang-log": {
+    "name": "Mempisang Log",
+    "level": 90,
+    "stars": 1,
+    "perception": 2990
+  },
+  "paldao-log": {
+    "name": "Paldao Log",
+    "level": 90,
+    "stars": 2,
+    "perception": 3600
   }
 }

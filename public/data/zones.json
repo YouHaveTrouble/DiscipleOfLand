@@ -343,5 +343,39 @@
         }
       }
     ]
+  },
+  "elpis": {
+    "name": {
+      "en": "Elpis"
+    },
+    "aetherytes": [
+      {
+        "position": {
+          "x": 24.6,
+          "y": 24.0
+        },
+        "name": {
+          "en": "Anagnorisis"
+        }
+      },
+      {
+        "position": {
+          "x": 8.7,
+          "y": 32.3
+        },
+        "name": {
+          "en": "The Twelve Wonders"
+        }
+      },
+      {
+        "position": {
+          "x": 10.8,
+          "y": 17.0
+        },
+        "name": {
+          "en": "Poieten Oikos"
+        }
+      }
+    ]
   }
 }

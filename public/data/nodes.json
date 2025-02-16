@@ -203,7 +203,7 @@
     "job": "botanist",
     "type": "unspoiled",
     "position": {
-      "zone": "yar-tel",
+      "zone": "yak-tel",
       "x": 36.9,
       "y": 34.8
     },
@@ -262,6 +262,54 @@
     ],
     "items": [
       "rarefied-raw-dark-amber"
+    ]
+  },
+  {
+    "job": "miner",
+    "type": "legendary",
+    "position": {
+      "zone": "elpis",
+      "x": 30.2,
+      "y": 18.2
+    },
+    "times": [
+      "08:00-10:00",
+      "20:00-22:00"
+    ],
+    "items": [
+      "raw-spodumene"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "legendary",
+    "position": {
+      "zone": "elpis",
+      "x": 33.1,
+      "y": 14.7
+    },
+    "times": [
+      "06:00-08:00",
+      "18:00-20:00"
+    ],
+    "items": [
+      "mempisang-log"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "legendary",
+    "position": {
+      "zone": "elpis",
+      "x": 9.8,
+      "y": 29.8
+    },
+    "times": [
+      "02:00-04:00",
+      "14:00-16:00"
+    ],
+    "items": [
+      "paldao-log"
     ]
   }
 ]
