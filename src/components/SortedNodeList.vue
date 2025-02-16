@@ -112,6 +112,7 @@ export default defineComponent(
   display: flex;
   flex-direction: column;
   gap: 0.33rem;
-
+  padding-block: 0.5rem;
+  padding-inline: 0.25rem;
 }
 </style>

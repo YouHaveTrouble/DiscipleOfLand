@@ -130,6 +130,7 @@ section {
   flex-direction: column;
   gap: 1rem;
   padding-block: 1rem;
+  padding-inline: 0.25rem;
 
   details {
     background-color: #1f1f1f;
