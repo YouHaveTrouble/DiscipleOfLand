@@ -36,6 +36,7 @@
     </main>
     <footer>
       <p>v{{ version }}</p>
+      <p><a href="https://github.com/YouHaveTrouble/DiscipleOfLand/blob/master/CONTRIBUTING.MD">Need YOUR help to input node, item and zone data!</a></p>
     </footer>
   </div>
 </template>
@@ -227,7 +228,13 @@ nav {
 }
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem 0.25rem;
+  gap: 0.5rem;
+  p {
+    margin: 0;
+  }
 }
 </style>
