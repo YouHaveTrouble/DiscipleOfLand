@@ -1,0 +1,381 @@
+{
+  "labyrinthos": {
+    "name": {
+      "en": "Labyrinthos"
+    },
+    "aetherytes": [
+      {
+        "position": {
+          "x": 30.3,
+          "y": 11.9
+        },
+        "name": {
+          "en": "The Archeion"
+        }
+      },
+      {
+        "position": {
+          "x": 21.6,
+          "y": 20.4
+        },
+        "name": {
+          "en": "Sharlayan Hamlet"
+        }
+      },
+      {
+        "position": {
+          "x": 6.8,
+          "y": 27.5
+        },
+        "name": {
+          "en": "Aporia"
+        }
+      }
+    ]
+  },
+  "thavnair": {
+    "name": {
+      "en": "Thavnair"
+    },
+    "aetherytes": [
+      {
+        "position": {
+          "x": 29.5,
+          "y": 16.5
+        },
+        "name": {
+          "en": "Palaka's Stand"
+        }
+      },
+      {
+        "position": {
+          "x": 10.9,
+          "y": 22.2
+        },
+        "name": {
+          "en": "The Great Work"
+        }
+      },
+      {
+        "position": {
+          "x": 25.3,
+          "y": 34.0
+        },
+        "name": {
+          "en": "Yedlihmad"
+        }
+      }
+    ]
+  },
+  "mare-lamentorum": {
+    "name": {
+        "en": "Mare Lamentorum"
+    },
+    "aetherytes": [
+      {
+        "position": {
+          "x": 10.6,
+          "y": 34.3
+        },
+        "name": {
+          "en": "Sinus Lacrimarum"
+        }
+      },
+      {
+        "position": {
+          "x": 21.7,
+          "y": 11.1
+        },
+        "name": {
+          "en": "Bestways Burrow"
+        }
+      }
+    ]
+  },
+  "ultima-thule": {
+    "name": {
+      "en": "Ultima Thule"
+    },
+    "aetherytes": [
+      {
+        "position": {
+          "x": 22.7,
+          "y": 8.3
+        },
+        "name": {
+          "en": "Reah Tahra"
+        }
+      },
+      {
+        "position": {
+        },
+        "name": {
+          "en": "Abode of the Ea"
+        }
+      },
+      {
+        "position": {
+          "x": 31.3,
+          "y": 28.0
+        },
+        "name": {
+          "en": "Base Omnicron"
+        }
+      }
+    ]
+  },
+  "garlemald": {
+    "name": {
+        "en": "Garlemald"
+    },
+    "aetherytes": [
+      {
+        "position": {
+          "x": 13.3,
+          "y": 31.1
+        },
+        "name": {
+          "en": "Camp Broken Glass"
+        }
+      },
+      {
+        "position": {
+          "x": 31.7,
+          "y": 18.0
+        },
+        "name": {
+          "en": "Tertium"
+        }
+      }
+    ]
+  },
+  "yak-tel": {
+    "name": {
+      "en": "Yak T'el"
+    },
+    "aetherytes": [
+      {
+        "position": {
+          "x": 13.5,
+          "y": 12.9
+        },
+        "name": {
+          "en": "Iq Br'aax"
+        }
+      },
+      {
+        "position": {
+          "x": 35.9,
+          "y": 32.0
+        },
+        "name": {
+          "en": "Mamook"
+        }
+      }
+    ]
+  },
+  "shaaloani": {
+    "name": {
+      "en": "Shaaloani"
+    },
+    "aetherytes": [
+      {
+        "position": {
+          "x": 15.6,
+          "y": 19.2
+        },
+        "name": {
+          "en": "Sheshenewezi Springs"
+        }
+      },
+      {
+        "position": {
+          "x": 29.0,
+          "y": 30.8
+        },
+        "name": {
+          "en": "Hhusatahwi"
+        }
+      },
+      {
+        "position": {
+          "x": 27.1,
+          "y": 10.1
+        },
+        "name": {
+          "en": "Mehwahhetsoan"
+        }
+      }
+    ]
+  },
+  "heritage-found": {
+    "name": {
+      "en": "Heritage Found"
+    },
+    "aetherytes": [
+      {
+        "position": {
+          "x": 17.0,
+          "y": 9.8
+        },
+        "name": {
+          "en": "The Outskirts"
+        }
+      },
+      {
+        "position": {
+          "x": 31.7,
+          "y": 25.7
+        },
+        "name": {
+          "en": "Yyasulani Station"
+        }
+      },
+      {
+        "position": {
+          "x": 17.0,
+          "y": 23.9
+        },
+        "name": {
+          "en": "Electrope Strike"
+        }
+      }
+    ]
+  },
+  "living-memory": {
+    "name": {
+      "en": "Living Memory"
+    },
+    "aetherytes": [
+      {
+        "position": {
+          "x": 21.5,
+          "y": 37.3
+        },
+        "name": {
+          "en": "Leynode Mnemo"
+        }
+      },
+      {
+        "position": {
+          "x": 34.7,
+          "y": 15.7
+        },
+        "name": {
+          "en": "Leynode Pyro"
+        }
+      },
+      {
+        "position": {
+          "x": 16.4,
+          "y": 13.5
+        },
+        "name": {
+          "en": "Leynode Aero"
+        }
+      }
+    ]
+  },
+  "urquopacha": {
+    "name": {
+      "en": "Urquopacha"
+    },
+    "aetherytes": [
+      {
+        "position": {
+          "x": 30.5,
+          "y": 34.2
+        },
+        "name": {
+          "en": "Worlar's Echo"
+        }
+      },
+      {
+        "position": {
+          "x": 28.1,
+          "y": 13.1
+        },
+        "name": {
+          "en": "Wachunpelo"
+        }
+      }
+    ]
+  },
+  "kozamauka": {
+    "name": {
+      "en": "Kozama'uka"
+    },
+    "aetherytes": [
+      {
+        "position": {
+          "x": 37.1,
+          "y": 16.9
+        },
+        "name": {
+          "en": "Dock Poga"
+        }
+      },
+      {
+        "position": {
+          "x": 18.0,
+          "y": 12.0
+        },
+        "name": {
+          "en": "Ok'hanu"
+        }
+      },
+      {
+        "position": {
+          "x": 11.8,
+          "y": 27.8
+        },
+        "name": {
+          "en": "Earthenshire"
+        }
+      },
+      {
+        "position": {
+          "x": 32.2,
+          "y": 25.9
+        },
+        "name": {
+          "en": "Many Fires"
+        }
+      }
+    ]
+  },
+  "elpis": {
+    "name": {
+      "en": "Elpis"
+    },
+    "aetherytes": [
+      {
+        "position": {
+          "x": 24.6,
+          "y": 24.0
+        },
+        "name": {
+          "en": "Anagnorisis"
+        }
+      },
+      {
+        "position": {
+          "x": 8.7,
+          "y": 32.3
+        },
+        "name": {
+          "en": "The Twelve Wonders"
+        }
+      },
+      {
+        "position": {
+          "x": 10.8,
+          "y": 17.0
+        },
+        "name": {
+          "en": "Poieten Oikos"
+        }
+      }
+    ]
+  }
+}
