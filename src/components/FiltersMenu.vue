@@ -46,13 +46,13 @@
           <span>Botanist</span>
           <input
             type="checkbox"
-            :checked="filters.jobs.includes(Job.BOTANIST)"
+            :checked="filters.jobs.has(Job.BOTANIST)"
             @change="(e: Event) => {
               const target = e.target as HTMLInputElement;
               if (target.checked) {
-                filters.jobs.push(Job.BOTANIST);
+                filters.jobs.add(Job.BOTANIST);
               } else {
-                filters.jobs = filters.jobs.filter((job) => job !== Job.BOTANIST);
+                filters.jobs.delete(Job.BOTANIST);
               }
             }"
           >
@@ -61,13 +61,48 @@
           <span>Miner</span>
           <input
             type="checkbox"
-            :checked="filters.jobs.includes(Job.MINER)"
+            :checked="filters.jobs.has(Job.MINER)"
             @change="(e: Event) => {
               const target = e.target as HTMLInputElement;
               if (target.checked) {
-                filters.jobs.push(Job.MINER);
+                filters.jobs.add(Job.MINER);
               } else {
-                filters.jobs = filters.jobs.filter((job) => job !== Job.MINER);
+                filters.jobs.delete(Job.MINER);
+              }
+            }"
+          >
+        </label>
+      </section>
+    </details>
+    <details open>
+      <summary>Node type</summary>
+      <section>
+        <label class="horizontal">
+          <span>Unspoiled</span>
+          <input
+            type="checkbox"
+            :checked="filters.nodeTypes.has(NodeType.UNSPOILED)"
+            @change="(e: Event) => {
+              const target = e.target as HTMLInputElement;
+              if (target.checked) {
+                filters.nodeTypes.add(NodeType.UNSPOILED);
+              } else {
+                filters.nodeTypes.delete(NodeType.UNSPOILED);
+              }
+            }"
+          >
+        </label>
+        <label class="horizontal">
+          <span>Legendary</span>
+          <input
+            type="checkbox"
+            :checked="filters.nodeTypes.has(NodeType.LEGENDARY)"
+            @change="(e: Event) => {
+              const target = e.target as HTMLInputElement;
+              if (target.checked) {
+                filters.nodeTypes.add(NodeType.LEGENDARY);
+              } else {
+                filters.nodeTypes.delete(NodeType.LEGENDARY);
               }
             }"
           >
@@ -81,27 +116,27 @@
 import {defineComponent} from "vue";
 import Filters from "@/util/Filters";
 import {Job} from "@/enums/Job";
+import {NodeType} from "@/enums/NodeType";
 
 export default defineComponent({
   name: "FiltersMenu",
   computed: {
+    NodeType() {
+      return NodeType
+    },
     Job() {
       return Job
     }
   },
   emits: ['update:filters'],
   data: () => ({
-    filters: {
-      minLevel: undefined,
-      maxLevel: undefined,
-      jobs: [] as Job[],
-    },
+    filters: new Filters(),
   }),
   watch: {
     filters: {
       handler(newFilters) {
         const filters = new Filters(newFilters);
-        window.localStorage.setItem("filters", JSON.stringify(filters));
+        window.localStorage.setItem("filters", filters.serialize());
       },
       deep: true,
     },
@@ -115,10 +150,11 @@ export default defineComponent({
     },
   },
   mounted() {
-    const filters = window.localStorage.getItem("filters");
-    if (filters) {
-      this.filters = JSON.parse(filters);
-    }
+    const savedFilters = window.localStorage.getItem("filters");
+    if (!savedFilters) return;
+    const parsedFilters = JSON.parse(savedFilters);
+    this.filters = new Filters(parsedFilters);
+
 
   },
 });

@@ -85,8 +85,9 @@ export default defineComponent(
         this.displayNodes = nodes.filter((node) => {
           let shouldDisplay = false;
 
-          if (filters && !filters.jobs.includes(node.job)) {
-            return false;
+          if (filters) {
+            if (!filters.jobs.has(node.job)) return false;
+            if (!filters.nodeTypes.has(node.nodeType)) return false;
           }
 
           for (const item of node.items) {
