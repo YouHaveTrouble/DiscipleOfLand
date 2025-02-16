@@ -129,21 +129,33 @@ export default defineComponent({
     for (const nodeData of nodes) {
 
       const job = jobFromString(nodeData.job);
-      if (job === null) continue;
+      if (job === null) {
+        console.debug(`Failed to parse job: ${nodeData.job}`);
+        continue;
+      }
       const nodeType = nodeTypeFromString(nodeData.type);
-      if (nodeType === null) continue;
+      if (nodeType === null) {
+        console.debug(`Failed to parse node type: ${nodeData.type}`);
+        continue;
+      }
 
       const items = [] as Item[];
       for (const itemId of nodeData.items) {
         const item = this.items[itemId];
-        if (item === undefined) continue;
+        if (item === undefined) {
+          console.debug(`Failed to find item with id: ${itemId}`);
+          continue;
+        }
         items.push(item);
       }
 
       const times = [] as TimeRange[];
       for (const timeRangeEntry of nodeData.times) {
         const timeSplit = timeRangeEntry.split("-");
-        if (timeSplit.length !== 2) continue;
+        if (timeSplit.length !== 2) {
+          console.debug(`Failed to parse time range: ${timeRangeEntry}`);
+          continue;
+        }
         const startTime = timeSplit[0].split(":");
         const endTime = timeSplit[1].split(":");
         times.push(new TimeRange(
@@ -155,7 +167,10 @@ export default defineComponent({
       }
 
       const nearestAetheryte = this.findNearestAetheryte(nodeData?.position?.zone, nodeData?.position?.x, nodeData.position?.y);
-      if (nearestAetheryte === null) continue;
+      if (nearestAetheryte === null) {
+        console.debug(`Failed to find nearest aetheryte for node: ${JSON.stringify(nodeData)}`);
+        continue;
+      }
 
       this.nodes.push(new Node(
           job,
