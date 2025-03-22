@@ -18,7 +18,13 @@ export default class Filters {
     ) {
         this.minLevel = data?.minLevel || 91;
         this.maxLevel = data?.maxLevel || 100;
-        const jobData = data?.jobs || [Job.BOTANIST, Job.MINER];
+        let jobData = [
+            Job.BOTANIST.toLowerCase(),
+            Job.MINER.toLowerCase()
+        ];
+        if (data?.jobs && Array.isArray(data?.jobs) && data?.jobs?.length > 0) {
+            jobData = data.jobs;
+        }
 
         for (const job of jobData) {
             const parsedJob = jobFromString(job);
@@ -26,24 +32,33 @@ export default class Filters {
             this.jobs.add(parsedJob);
         }
 
-        const nodeTypeData = data?.nodeTypes || [
-            NodeType.UNSPOILED,
+        let nodeTypeData = [
+            NodeType.UNSPOILED.toLowerCase(),
         ];
-
-        for (const nodeType of nodeTypeData) {
-            const parsedNodeType = nodeTypeFromString(nodeType);
-            if (!parsedNodeType) continue;
-            this.nodeTypes.add(parsedNodeType);
+        if (data?.nodeTypes && Array.isArray(data?.nodeTypes) && data?.nodeTypes?.length > 0) {
+            nodeTypeData = data.nodeTypes;
         }
+
+        if (Array.isArray(nodeTypeData)) {
+            for (const nodeType of nodeTypeData) {
+                const parsedNodeType = nodeTypeFromString(nodeType);
+                if (!parsedNodeType) continue;
+                this.nodeTypes.add(parsedNodeType);
+            }
+        }
+
 
     }
 
     serialize(): string {
+        const serializedJobs = Array.from(this.jobs);
+        const serializedNodeTypes = Array.from(this.nodeTypes);
+
         return JSON.stringify({
             minLevel: this.minLevel,
             maxLevel: this.maxLevel,
-            jobs: Array.from(this.jobs).map(job => job),
-            nodeTypes: Array.from(this.nodeTypes).map(nodeType => nodeType),
+            jobs: serializedJobs,
+            nodeTypes: serializedNodeTypes,
         });
     }
 

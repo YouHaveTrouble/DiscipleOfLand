@@ -135,8 +135,7 @@ export default defineComponent({
   watch: {
     filters: {
       handler(newFilters) {
-        const filters = new Filters(newFilters);
-        window.localStorage.setItem("filters", filters.serialize());
+        window.localStorage.setItem("filters", newFilters.serialize());
       },
       deep: true,
     },
