@@ -72,7 +72,7 @@ export default defineComponent(
         let filters: Filters | null = null;
         let filtersString = window.localStorage.getItem("filters");
         if (filtersString === null) {
-          window.localStorage.setItem("filters", JSON.stringify(new Filters()));
+          window.localStorage.setItem("filters", new Filters().serialize());
           filtersString = window.localStorage.getItem("filters");
         }
         if (filtersString === null) {
