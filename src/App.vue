@@ -91,7 +91,7 @@ export default defineComponent({
     this.eorzeaTime = new EorzeaTime();
     setInterval(() => {
       this.eorzeaTime = new EorzeaTime();
-    }, 500);
+    }, 1000);
 
     const itemData: Response | null = await fetch("/data/items.json")
       .catch((): null => {

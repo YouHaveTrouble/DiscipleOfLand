@@ -49,9 +49,7 @@ export default defineComponent(
         }
       },
       eorzeaTime: {
-        handler(newValue, oldValue) {
-          if (oldValue === undefined) return;
-          if (newValue?.getMinutes() === oldValue?.getMinutes()) return;
+        handler() {
           this.sortListByTime();
         }
       }

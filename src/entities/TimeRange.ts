@@ -13,7 +13,7 @@ export default class TimeRange {
   public isWithinTimeFrame(hour: number, minute: number): boolean {
     return (
         this.from[0] < hour || this.from[0] == hour && this.from[1] <= minute)
-        && (hour < this.to[0] || hour == this.to[0] && minute <= this.to[1]
+        && (hour < this.to[0] || hour == this.to[0] && minute < this.to[1]
       );
   }
 

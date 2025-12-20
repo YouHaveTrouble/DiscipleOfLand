@@ -8,7 +8,7 @@
     >
       <div class="timer">
         {{
-          prettyTimer(gatheringNode.getSecondsToNextActiveTime(eorzeaTime))
+          prettyTimer(secondsToNextActiveTime)
         }}
       </div>
     </div>
@@ -19,7 +19,7 @@
         Active
         <div class="countdown">
           {{
-            prettyTimer(gatheringNode.getSecondsToNextInactiveTime(eorzeaTime))
+            prettyTimer(secondsToNextInactiveTime)
           }}
         </div>
       </div>
@@ -69,6 +69,12 @@ import Zone from "@/entities/Zone";
 
 export default defineComponent({
   name: "GatheringNode",
+  data() {
+    return {
+      secondsToNextInactiveTime: 0 as number,
+      secondsToNextActiveTime: 0 as number,
+    };
+  },
   props: {
     gatheringNode: {
       type: Object as PropType<Node>,
@@ -83,13 +89,27 @@ export default defineComponent({
       required: true
     },
   },
+  watch: {
+    eorzeaTime: {
+      handler() {
+        this.calculateTimers()
+      }
+    }
+  },
   methods: {
     prettyTimer(seconds: number): string {
       const minutes = Math.floor(seconds / 60);
       const remainingSeconds = seconds % 60;
       return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+    },
+    calculateTimers() {
+      this.secondsToNextInactiveTime = this.gatheringNode.getSecondsToNextInactiveTime(this.eorzeaTime);
+      this.secondsToNextActiveTime = this.gatheringNode.getSecondsToNextActiveTime(this.eorzeaTime);
     }
   },
+  mounted() {
+    this.calculateTimers();
+  }
 });
 </script>
 
