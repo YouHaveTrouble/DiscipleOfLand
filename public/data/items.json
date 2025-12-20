@@ -134,5 +134,11 @@
     "level": 90,
     "stars": 2,
     "perception": 3600
+  },
+  "shaaloani-coffee": {
+    "name": "Shaaloani Coffee",
+    "level": 100,
+    "stars": 2,
+    "perception": 4740
   }
 }

@@ -311,5 +311,21 @@
     "items": [
       "paldao-log"
     ]
+  },
+  {
+    "job": "botanist",
+    "type": "legendary",
+    "position": {
+      "zone": "shaaloani",
+      "x": 34.9,
+      "y": 16.3
+    },
+    "times": [
+      "04:00-06:00",
+      "16:00-18:00"
+    ],
+    "items": [
+      "shaaloani-coffee"
+    ]
   }
 ]
