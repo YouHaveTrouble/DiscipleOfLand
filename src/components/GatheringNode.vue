@@ -117,6 +117,7 @@ export default defineComponent({
   border: 1px solid #fff;
   padding: 0.5rem;
   border-radius: 0.25rem;
+  content-visibility: auto;
 
   &.active {
     animation: infinite pulsing 6s;
