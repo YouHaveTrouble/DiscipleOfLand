@@ -3,10 +3,26 @@
     class="node"
     :class="{active: gatheringNode.isActive(eorzeaTime)}"
   >
-    <div class="timer">
-      {{
-        gatheringNode.isActive(eorzeaTime) ? 'Active' : prettyTimer(gatheringNode.getSecondsToNextActiveTime(eorzeaTime))
-      }}
+    <div
+      v-if="!gatheringNode.isActive(eorzeaTime)"
+    >
+      <div class="timer">
+        {{
+          prettyTimer(gatheringNode.getSecondsToNextActiveTime(eorzeaTime))
+        }}
+      </div>
+    </div>
+    <div
+      v-else
+    >
+      <div class="timer">
+        Active
+        <div class="countdown">
+          {{
+            prettyTimer(gatheringNode.getSecondsToNextInactiveTime(eorzeaTime))
+          }}
+        </div>
+      </div>
     </div>
     <div class="job">
       <div class="icon">
@@ -29,7 +45,9 @@
       <div class="info">
         <span>{{ zones[gatheringNode.nearestAetheryte.position.zone]?.name?.en }}</span>
         <span>{{ gatheringNode.nearestAetheryte.name.en }}</span>
-        <span>{{ gatheringNode.nearestAetheryte.position.x.toFixed(1) }}, {{ gatheringNode.nearestAetheryte.position.y.toFixed(1) }}</span>
+        <span>{{
+          gatheringNode.nearestAetheryte.position.x.toFixed(1)
+        }}, {{ gatheringNode.nearestAetheryte.position.y.toFixed(1) }}</span>
       </div>
     </div>
     <div class="items">
@@ -78,9 +96,15 @@ export default defineComponent({
 <style scoped lang="scss">
 
 @keyframes pulsing {
-  0% {background-color: rgba(255,255,255, 0.05);}
-  50% {background-color: rgba(255,255,255, 0.075);}
-  100% {background-color: rgba(255,255,255, 0.05);}
+  0% {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.075);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
 }
 
 .node {
@@ -102,6 +126,8 @@ export default defineComponent({
     min-width: 7rem;
     font-size: 2rem;
     display: flex;
+    height: 100%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }

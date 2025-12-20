@@ -47,6 +47,15 @@ export default class Node {
     return countdown;
   }
 
+  getCountdownToInactive(eorzeaTime: EorzeaTime): number {
+    let countdown: number = Infinity;
+    for (const timeRange of this.times) {
+      const endTimeFrame: number = timeRange.getEndTimeFrame(eorzeaTime);
+      if (endTimeFrame < countdown) countdown = endTimeFrame;
+    }
+    return countdown;
+  }
+
   getNextActiveTime(eorzeaTime: EorzeaTime): EorzeaTime {
     let countdownTimeStamp: number = Infinity;
     for (const timeRange of this.times) {
@@ -56,8 +65,21 @@ export default class Node {
     return EorzeaTime.fromEorzeaTime(new Date(this.getCountdownToActive(eorzeaTime)));
   }
 
+  getNextInactiveTime(eorzeaTime: EorzeaTime): EorzeaTime {
+    let countdownTimeStamp: number = Infinity;
+    for (const timeRange of this.times) {
+        const endTimeFrame: number = timeRange.getEndTimeFrame(eorzeaTime);
+        if (endTimeFrame < countdownTimeStamp) countdownTimeStamp = endTimeFrame;
+    }
+    return EorzeaTime.fromEorzeaTime(new Date(this.getCountdownToInactive(eorzeaTime)));
+  }
+
   getSecondsToNextActiveTime(eorzeaTime: EorzeaTime): number {
     return Math.floor((this.getNextActiveTime(eorzeaTime).realDate.getTime() - eorzeaTime.realDate.getTime()) / 1000);
+  }
+
+  getSecondsToNextInactiveTime(eorzeaTime: EorzeaTime): number {
+    return Math.floor((this.getNextInactiveTime(eorzeaTime).realDate.getTime() - eorzeaTime.realDate.getTime()) / 1000);
   }
 
 }
