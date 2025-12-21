@@ -1,0 +1,331 @@
+[
+  {
+    "job": "botanist",
+    "type": "unspoiled",
+    "position": {
+      "zone": "labyrinthos",
+      "x": 9.7,
+      "y": 22.2
+    },
+    "times": [
+      "06:00-08:00",
+      "18:00-20:00"
+    ],
+    "items": [
+      "rarefied-dark-rye",
+      "rarefied-iceberg-lettuce"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "unspoiled",
+    "position": {
+      "zone": "thavnair",
+      "x": 14.3,
+      "y": 14.5
+    },
+    "times": [
+      "02:00-04:00",
+      "14:00-16:00"
+    ],
+    "items": [
+      "rarefied-palm-log",
+      "rarefied-coconut"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "unspoiled",
+    "position": {
+      "zone": "ultima-thule",
+      "x": 14.0,
+      "y": 28.0
+    },
+    "times": [
+      "08:00-10:00",
+      "20:00-22:00"
+    ],
+    "items": [
+      "rarefied-ar-cean-cotton-boll"
+    ]
+  },
+  {
+    "job": "miner",
+    "type": "unspoiled",
+    "position": {
+      "zone": "labyrinthos",
+      "x": 32.5,
+      "y": 21.2
+    },
+    "times": [
+      "12:00-14:00",
+      "00:00-02:00"
+    ],
+    "items": [
+      "rarefied-sharlayan-rock-salt",
+      "rarefied-raw-ametrine"
+    ]
+  },
+  {
+    "job": "miner",
+    "type": "unspoiled",
+    "position": {
+      "zone": "garlemald",
+      "x": 12.9,
+      "y": 21.8
+    },
+    "times": [
+      "14:00-16:00",
+      "02:00-04:00"
+    ],
+    "items": [
+      "rarefied-eblan-alumen",
+      "rarefied-phrygian-gold-ore"
+    ]
+  },
+  {
+    "job": "miner",
+    "type": "unspoiled",
+    "position": {
+      "zone": "thavnair",
+      "x": 32.0,
+      "y": 25.0
+    },
+    "times": [
+      "04:00-06:00",
+      "16:00-18:00"
+    ],
+    "items": [
+      "rarefied-pewter-ore"
+    ]
+  },
+  {
+    "job": "miner",
+    "type": "unspoiled",
+    "position": {
+      "zone": "mare-lamentorum",
+      "x": 16.0,
+      "y": 32.0
+    },
+    "times": [
+      "06:00-08:00",
+      "18:00-20:00"
+    ],
+    "items": [
+      "rarefied-bismuth-ore"
+    ]
+  },
+  {
+    "job": "miner",
+    "type": "unspoiled",
+    "position": {
+      "zone": "elpis",
+      "x": 8.0,
+      "y": 36.0
+    },
+    "times": [
+      "10:00-12:00",
+      "22:00-00:00"
+    ],
+    "items": [
+      "rarefied-annite",
+        "rarefied-blue-zircon"
+    ]
+  },
+  {
+    "job": "miner",
+    "type": "unspoiled",
+    "position": {
+      "zone": "shaaloani",
+      "x": 9.2,
+      "y": 24.2
+    },
+    "times": [
+      "08:00-10:00",
+      "20:00-22:00"
+    ],
+    "items": [
+      "rarefied-magnesite-ore",
+      "rarefied-titanium-gold-ore"
+    ]
+  },
+  {
+    "job": "miner",
+    "type": "unspoiled",
+    "position": {
+      "zone": "heritage-found",
+      "x": 34.6,
+      "y": 8.2
+    },
+    "times": [
+      "04:00-06:00",
+      "16:00-18:00"
+    ],
+    "items": [
+      "rarefied-rakaznar-ore",
+      "rarefied-white-gold-ore"
+    ]
+  },
+  {
+    "job": "miner",
+    "type": "unspoiled",
+    "position": {
+      "zone": "living-memory",
+      "x": 24.9,
+      "y": 17.3
+    },
+    "times": [
+      "00:00-02:00",
+      "12:00-14:00"
+    ],
+    "items": [
+      "rarefied-ash-soil"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "unspoiled",
+    "position": {
+      "zone": "shaaloani",
+      "x": 31.6,
+      "y": 20.4
+    },
+    "times": [
+      "06:00-08:00",
+      "18:00-20:00"
+    ],
+    "items": [
+      "rarefied-acacia-log",
+      "rarefied-acacia-bark"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "unspoiled",
+    "position": {
+      "zone": "yak-tel",
+      "x": 36.9,
+      "y": 34.8
+    },
+    "times": [
+      "02:00-04:00",
+      "14:00-16:00"
+    ],
+    "items": [
+      "rarefied-acacia-log",
+      "rarefied-acacia-bark"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "unspoiled",
+    "position": {
+      "zone": "living-memory",
+      "x": 8.7,
+      "y": 7.6
+    },
+    "times": [
+      "10:00-12:00",
+      "22:00-00:00"
+    ],
+    "items": [
+      "rarefied-windsbalm-bay-leaf"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "unspoiled",
+    "position": {
+      "zone": "urquopacha",
+      "x": 5.9,
+      "y": 23.8
+    },
+    "times": [
+      "00:00-02:00",
+      "12:00-14:00"
+    ],
+    "items": [
+      "rarefied-mountain-flax"
+    ]
+  },
+  {
+    "job": "miner",
+    "type": "unspoiled",
+    "position": {
+      "zone": "kozamauka",
+      "x": 6.9,
+      "y": 7.5
+    },
+    "times": [
+      "10:00-12:00",
+      "22:00-00:00"
+    ],
+    "items": [
+      "rarefied-raw-dark-amber"
+    ]
+  },
+  {
+    "job": "miner",
+    "type": "legendary",
+    "position": {
+      "zone": "elpis",
+      "x": 30.2,
+      "y": 18.2
+    },
+    "times": [
+      "08:00-10:00",
+      "20:00-22:00"
+    ],
+    "items": [
+      "raw-spodumene"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "legendary",
+    "position": {
+      "zone": "elpis",
+      "x": 33.1,
+      "y": 14.7
+    },
+    "times": [
+      "06:00-08:00",
+      "18:00-20:00"
+    ],
+    "items": [
+      "mempisang-log"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "legendary",
+    "position": {
+      "zone": "elpis",
+      "x": 9.8,
+      "y": 29.8
+    },
+    "times": [
+      "02:00-04:00",
+      "14:00-16:00"
+    ],
+    "items": [
+      "paldao-log"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "legendary",
+    "position": {
+      "zone": "shaaloani",
+      "x": 34.9,
+      "y": 16.3
+    },
+    "times": [
+      "04:00-06:00",
+      "16:00-18:00"
+    ],
+    "items": [
+      "shaaloani-coffee"
+    ]
+  }
+]

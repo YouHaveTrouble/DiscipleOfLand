@@ -1,0 +1,144 @@
+{
+
+  "rarefied-sykon": {
+    "name": "Rarefied Sykon",
+    "level": 87
+  },
+  "rarefied-elder-nutmeg": {
+    "name": "Rarefied Elder Nutmeg",
+    "level": 90
+  },
+  "rarefied-coconut": {
+    "name": "Rarefied Coconut",
+    "level": 85
+  },
+  "rarefied-palm-log": {
+    "name": "Rarefied Palm Log",
+    "level": 85
+  },
+  "rarefied-red-pine-log": {
+    "name": "Rarefied Red Pine Log",
+    "level": 83
+  },
+  "rarefied-dark-rye": {
+    "name": "Rarefied Dark Rye",
+    "level": 89
+  },
+  "rarefied-iceberg-lettuce": {
+    "name": "Rarefied Iceberg Lettuce",
+    "level": 90,
+    "stars": 1
+  },
+  "rarefied-ar-cean-cotton-boll": {
+    "name": "Rarefied AR-Cean Cotton Boll",
+    "level": 90,
+    "stars": 1
+  },
+
+  "rarefied-sharlayan-rock-salt": {
+    "name": "Rarefied Sharlayan Rock Salt",
+    "level": 85
+  },
+  "rarefied-raw-ametrine": {
+    "name": "Rarefied Raw Ametrine",
+    "level": 81
+  },
+  "rarefied-eblan-alumen": {
+    "name": "Rarefied Eblan Alumen",
+    "level": 90
+  },
+  "rarefied-phrygian-gold-ore": {
+    "name":"Rarefied Phrygian Gold Ore",
+    "level": 87
+  },
+  "rarefied-pewter-ore": {
+    "name": "Rarefied Pewter Ore",
+    "level": 90,
+    "stars": 1
+  },
+  "rarefied-bismuth-ore": {
+    "name": "Rarefied Bismuth Ore",
+    "level": 83
+  },
+  "rarefied-annite": {
+    "name": "Rarefied Annite",
+    "level": 90,
+    "stars": 1
+  },
+  "rarefied-blue-zircon": {
+    "name": "Rarefied Blue Zircon",
+    "level": 89
+  },
+  "rarefied-titanium-gold-ore": {
+    "name": "Rarefied Titanium Gold Ore",
+    "level": 96
+  },
+  "rarefied-magnesite-ore": {
+    "name": "Rarefied Magnesite Ore",
+    "level": 100
+  },
+  "rarefied-rakaznar-ore": {
+    "name": "Rarefied Ra'Kaznar Ore",
+    "level": 100
+  },
+  "rarefied-white-gold-ore": {
+    "name": "Rarefied White Gold Ore",
+    "level": 98
+  },
+  "rarefied-ash-soil": {
+    "name": "Rarefied Ash Soil",
+    "level": 100
+  },
+  "rarefied-acacia-log": {
+    "name": "Rarefied Acacia Log",
+    "level": 100
+  },
+  "rarefied-acacia-bark": {
+    "name": "Rarefied Acacia Bark",
+    "level": 98
+  },
+  "rarefied-dark-mahogany-log": {
+    "name": "Rarefied Dark Mahogany Log",
+    "level": 100
+  },
+  "rarefied-sweet-kukuru-bean": {
+    "name": "Rarefied Sweet Kukuru Bean",
+    "level": 96
+  },
+  "rarefied-windsbalm-bay-leaf": {
+    "name": "Rarefied Windsbalm Bay Leaf",
+    "level": 100
+  },
+  "rarefied-mountain-flax": {
+    "name": "Rarefied Mountain Flax",
+    "level": 93
+  },
+  "rarefied-raw-dark-amber": {
+    "name": "Rarefied Raw Dark Amber",
+    "level": 93
+  },
+  "raw-spodumene": {
+    "name": "Raw Spodumene",
+    "level": 90,
+    "stars": 3,
+    "perception": 3850
+  },
+  "mempisang-log": {
+    "name": "Mempisang Log",
+    "level": 90,
+    "stars": 1,
+    "perception": 2990
+  },
+  "paldao-log": {
+    "name": "Paldao Log",
+    "level": 90,
+    "stars": 2,
+    "perception": 3600
+  },
+  "shaaloani-coffee": {
+    "name": "Shaaloani Coffee",
+    "level": 100,
+    "stars": 2,
+    "perception": 4740
+  }
+}
