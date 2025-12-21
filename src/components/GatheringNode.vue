@@ -3,51 +3,53 @@
     class="node"
     :class="{active: gatheringNode.isActive(eorzeaTime)}"
   >
-    <div
-      v-if="!gatheringNode.isActive(eorzeaTime)"
-    >
-      <div class="timer">
-        {{
-          prettyTimer(secondsToNextActiveTime)
-        }}
-      </div>
-    </div>
-    <div
-      v-else
-    >
-      <div class="timer">
-        Active
-        <div class="countdown">
+    <div class="location-info">
+      <div
+        v-if="!gatheringNode.isActive(eorzeaTime)"
+      >
+        <div class="timer">
           {{
-            prettyTimer(secondsToNextInactiveTime)
+            prettyTimer(secondsToNextActiveTime)
           }}
         </div>
       </div>
-    </div>
-    <div class="job">
-      <div class="icon">
-        <img
-          :alt="gatheringNode.job"
-          :src="`https://xivapi.com/cj/1/${gatheringNode.job}.png`"
-          :title="gatheringNode.job"
-          draggable="false"
-        >
+      <div
+        v-else
+      >
+        <div class="timer">
+          Active
+          <div class="countdown">
+            {{
+              prettyTimer(secondsToNextInactiveTime)
+            }}
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="aetheryte">
-      <span class="icon">
-        <img
-          src="https://xivapi.com/img-misc/mappy/aetheryte.png"
-          alt="Aetheryte icon"
-          draggable="false"
-        >
-      </span>
-      <div class="info">
-        <span>{{ zones[gatheringNode.nearestAetheryte.position.zone]?.name?.en }}</span>
-        <span>{{ gatheringNode.nearestAetheryte.name.en }}</span>
-        <span>{{
-          gatheringNode.nearestAetheryte.position.x.toFixed(1)
-        }}, {{ gatheringNode.nearestAetheryte.position.y.toFixed(1) }}</span>
+      <div class="job">
+        <div class="icon">
+          <img
+            :alt="gatheringNode.job"
+            :src="`https://xivapi.com/cj/1/${gatheringNode.job}.png`"
+            :title="gatheringNode.job"
+            draggable="false"
+          >
+        </div>
+      </div>
+      <div class="aetheryte">
+        <span class="icon">
+          <img
+            src="https://xivapi.com/img-misc/mappy/aetheryte.png"
+            alt="Aetheryte icon"
+            draggable="false"
+          >
+        </span>
+        <div class="info">
+          <span class="zone-name">{{ zones[gatheringNode.location.zone]?.name?.en }}</span>
+          <span class="aetheryte-name">{{ gatheringNode.nearestAetheryte.name.en }}</span>
+          <span class="coords">{{
+            gatheringNode.nearestAetheryte.position.x.toFixed(1)
+          }}, {{ gatheringNode.nearestAetheryte.position.y.toFixed(1) }}</span>
+        </div>
       </div>
     </div>
     <div class="items">
@@ -139,6 +141,14 @@ export default defineComponent({
   border-radius: 0.25rem;
   content-visibility: auto;
 
+  .location-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+  }
+
   &.active {
     animation: infinite pulsing 6s;
   }
@@ -172,7 +182,7 @@ export default defineComponent({
   .aetheryte {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 0.25rem;
     font-size: 1.5rem;
@@ -196,6 +206,17 @@ export default defineComponent({
       justify-content: center;
       align-items: start;
       gap: 0.1rem;
+      line-height: 1;
+
+      .zone-name {
+        font-size: 0.75rem;
+      }
+      .aetheryte-name {
+        font-size: 1.1rem;
+      }
+      .coords {
+        padding-top: 0.15rem;
+      }
     }
   }
 
