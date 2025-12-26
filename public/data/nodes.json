@@ -129,7 +129,7 @@
     ],
     "items": [
       "rarefied-annite",
-        "rarefied-blue-zircon"
+      "rarefied-blue-zircon"
     ]
   },
   {
@@ -316,8 +316,90 @@
     "job": "botanist",
     "type": "legendary",
     "position": {
+      "zone": "kozamauka",
+      "x": 7.0,
+      "y": 33.0
+    },
+    "times": [
+      "12:00-14:00",
+      "00:00-02:00"
+    ],
+    "items": [
+      "ipe-log"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "legendary",
+    "position": {
       "zone": "shaaloani",
-      "x": 34.9,
+      "x": 10.0,
+      "y": 31.0
+    },
+    "times": [
+      "14:00-16:00",
+      "02:00-04:00"
+    ],
+    "items": [
+      "nopaliflower"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "legendary",
+    "position": {
+      "zone": "yak-tel",
+      "x": 14.0,
+      "y": 28.0
+    },
+    "times": [
+      "20:00-22:00",
+      "08:00-10:00"
+    ],
+    "items": [
+      "blackseed-cotton-boll"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "legendary",
+    "position": {
+      "zone": "living-memory",
+      "x": 28.0,
+      "y": 17.0
+    },
+    "times": [
+      "16:00-18:00",
+      "04:00-06:00"
+    ],
+    "items": [
+      "blackseed-cotton-boll",
+      "optical-fibergrass"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "legendary",
+    "position": {
+      "zone": "yak-tel",
+      "x": 35.8,
+      "y": 22.3
+    },
+    "times": [
+      "00:00-02:00",
+      "12:00-14:00"
+    ],
+    "items": [
+      "cordia-log",
+      "cordia-sap"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "legendary",
+    "position": {
+      "zone": "shaaloani",
+      "x": 35.0,
       "y": 16.3
     },
     "times": [
@@ -326,6 +408,86 @@
     ],
     "items": [
       "shaaloani-coffee"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "legendary",
+    "position": {
+      "zone": "living-memory",
+      "x": 22.5,
+      "y": 12.5
+    },
+    "times": [
+      "10:00-12:00",
+      "22:00-00:00"
+    ],
+    "items": [
+      "cordia-sap"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "legendary",
+    "position": {
+      "zone": "heritage-found",
+      "x": 34.2,
+      "y": 20.7
+    },
+    "times": [
+      "18:00-20:00",
+      "06:00-08:00"
+    ],
+    "items": [
+      "cochineal-pigment"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "legendary",
+    "position": {
+      "zone": "living-memory",
+      "x": 8.0,
+      "y": 10.0
+    },
+    "times": [
+      "08:00-10:00",
+      "20:00-22:00"
+    ],
+    "items": [
+      "fulgurpine-log"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "legendary",
+    "position": {
+      "zone": "kozamauka",
+      "x": 14.0,
+      "y": 10.0
+    },
+    "times": [
+      "04:00-06:00",
+      "16:00-18:00"
+    ],
+    "items": [
+      "carnuba-leaf"
+    ]
+  },
+  {
+    "job": "botanist",
+    "type": "legendary",
+    "position": {
+      "zone": "urquopacha",
+      "x": 5.0,
+      "y": 25.0
+    },
+    "times": [
+      "06:00-08:00",
+      "18:00-20:00"
+    ],
+    "items": [
+      "urqopacha-flax"
     ]
   }
 ]

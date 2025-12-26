@@ -140,5 +140,65 @@
     "level": 100,
     "stars": 2,
     "perception": 4740
+  },
+  "ipe-log": {
+    "name": "Ipe Log",
+    "level": 100,
+    "stars": 1,
+    "perception": 4480
+  },
+  "nopaliflower": {
+    "name": "Nopaliflower",
+    "level": 100,
+    "stars": 2,
+    "perception": 4480
+  },
+  "blackseed-cotton-boll": {
+    "name": "Blackseed Cotton Boll",
+    "level": 100,
+    "stars": 1,
+    "perception": 4480
+  },
+  "optical-fibergrass": {
+    "name": "Optical Fibergrass",
+    "level": 100,
+    "stars": 1,
+    "perception": 4480
+  },
+  "cordia-log": {
+    "name": "Cordia Log",
+    "level": 100,
+    "stars": 2,
+    "perception": 4740
+  },
+  "cordia-sap": {
+    "name": "Cordia Sap",
+    "level": 100,
+    "stars": 1,
+    "perception": 4960
+  },
+  "cochineal-pigment": {
+    "name": "Cochineal Pigment",
+    "level": 100,
+    "stars": 2,
+    "perception": 4740
+  },
+  "fulgurpine-log": {
+    "name": "Fulgurpine Log",
+    "level": 100,
+    "stars": 3,
+    "perception": 5090
+  },
+  "carnauba-leaf": {
+    "name": "Carnauba Leaf",
+    "level": 100,
+    "stars": 3,
+    "perception": 5090
+  },
+  "urqopacha-flax": {
+    "name": "Urqopacha Flax",
+    "level": 100,
+    "stars": 3,
+    "perception": 5090
   }
 }
